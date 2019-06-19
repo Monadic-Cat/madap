@@ -1,0 +1,27 @@
+{
+   "name": "madap",
+   "version": "0.1.2",
+   "description": "MAsks DAta Pod",
+   "main": "lib/index.js",
+   "repository": "https://github.com/Monadic-Cat/madap",
+   "files": [
+      "lib"
+   ],
+   "author": "Monadic Cat",
+   "license": "AGPL-3.0-or-later",
+   "scripts": {
+      "build": "yarn run flow-copy && babel src/ -d lib/",
+      "prepublish": "yarn run build",
+      "flow-copy": "flow-copy-source src/ lib/"
+   },
+   "dependencies": {
+      "lodash": "^4.17.11"
+   },
+   "devDependencies": {
+      "@babel/cli": "^7.4.4",
+      "@babel/core": "^7.4.5",
+      "@babel/preset-flow": "^7.0.0",
+      "flow-bin": "^0.102.0-rc",
+      "flow-copy-source": "^2.0.6"
+   }
+}
