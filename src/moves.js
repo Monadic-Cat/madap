@@ -678,6 +678,88 @@ const moves: Array<Move> = [
 			"you can roll + the Label your mentor embodies to",
 			`${emph("comfort or support someone")}, instead of rolling + Mundane.`
 		].join(" ")
+	},
+	// Outsider Moves
+	{
+		name: "Belong in two worlds",
+		body: [
+			"You have the resources that come with your station. Whenever you",
+			"contact your people, roll + Superior. On a 10+, hold 3. On a 7-9,",
+			"hold 2. On a miss, hold 1, but your people make an uncomfortable",
+			"demand of you. Spend your hold 1 for 1 to:",
+			bulletList([
+				["receive a useful piece of alien technology that will allow you",
+				 "to use any ability from another playbook once (choose the",
+				 "ability when you spend the hold)"].join(" "),
+				["consult your people's knowledge to ask the GM a question about",
+				 "the current situation"].join(" "),
+				"clear a condition through the comfort of contact with your home"
+			])
+		].join(" ")
+	},
+	{
+		name: "Alien tech",
+		body: [
+			"When you alter a human device with your alien technology,",
+			"roll + Freak. On a hit, you can create a device that can do",
+			"something impossible once and then fizzle. When you roll a 10+,",
+			"choose one:",
+			bulletList([
+				"it works exceptionally well",
+				"you get an additional use out of it"
+			]),
+			"On a miss, the device works, but it has a completely unintended",
+			"side effect that the GM will reveal when you use it."
+		].join(" ")
+	},
+	{
+		name: "Alien ways",
+		body: [
+			"Whenever you openly disregard or undermine an important Earth",
+			"custom in favor of one of your own people's customs, shift",
+			"Superior up and any other Label down."
+		].join(" ")
+	},
+	{
+		name: "Kirby-craft",
+		body: [
+			"You have a vehicle, something from your home. Detail its look,",
+			"and choose two strengths and two weaknesses. When you are flying",
+			"your ship, you can use it to",
+			emph("unleash your powers, directly engage a threat"),
+			`or ${emph("defend someone")} using Superior.`,
+			"\n",
+			emph("Strengths:"),
+			"Fast & maneuverable, chameleon plating, powerful weaponry,",
+			"regenerating, dimension-shifting, size-shifting, telepathic",
+			"\n",
+			emph("Weaknesses:"),
+			`Bizarre fuel source, susceptible to ${blankLine()}, easily`,
+			"detectable, slow and clumsy, unarmed, difficult to repair"
+		].join(" ")
+	},
+	{
+		name: "The best of them",
+		body: [
+			`When you ${emph("comfort or support someone")} by telling`,
+			"them how they exemplify the best parts of Earth, roll + Freak",
+			"instead of + Mundane."
+		].join(" ")
+	},
+	{
+		name: "Not so different after all",
+		body: [
+			"When you talk about your home, roll + Freak. On a 10+ choose two.",
+			"On a 7-9, choose one. During the conversation, you:",
+			bulletList([
+				"confess a flaw of your home; add 1 Team to the pool",
+				"mislead them about your home; take Influence over them",
+				"describe the glories of your home; clear a condition"
+			]),
+			"On a miss, you inadvertently reveal more about yourself than you",
+			"planned; tell them a secret or vulnerability you hadn't shared",
+			"with Earthlings before now."
+		].join(" ")
 	}
 ]
 
