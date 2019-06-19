@@ -760,6 +760,88 @@ const moves: Array<Move> = [
 			"planned; tell them a secret or vulnerability you hadn't shared",
 			"with Earthlings before now."
 		].join(" ")
+	},
+	// Nova Burn
+	{
+		name: "Reality storm",
+		body: [
+			"You channel a destructive burst with your powers. Spend 1 burn to",
+			`${emph("directly engage a threat")} using your powers, rolling`,
+			"+ Freak instead of + Danger. If you do, you will cause unwanted",
+			"collateral damage unless you spend another burn."
+		].join(" ")
+	},
+	{
+		name: "Shielding",
+		body: [
+			"You call up a fast protective field to stop a danger. Spend 1 burn",
+			`to ${emph("defend someone")} else from an immediate threat, rolling`,
+			"+ Freak instead of + Savior."
+		].join(" ")
+	},
+	{
+		name: "Constructs",
+		body: [
+			"Spend 1 burn to create any object with your powers, up to the size",
+			"of a person. Spend an additional burn to animate it independently of",
+			"yourself. The construct dissolves at the end of the scene."
+		].join(" ")
+	},
+	{
+		name: "Moat",
+		body: [
+			"Spend 1 burn to create a barrier that will hold back threats as long",
+			"as you keep your attention on it. The GM may call for you to spend",
+			"another burn if the barrier is threatened by particularly powerful",
+			"enemies."
+		].join(" ")
+	},
+	{
+		name: "Worship",
+		body: [
+			"You put out a tremendous display of your might. Spend 1 burn to awe",
+			"an audience into silence, respect, and attention when you",
+			emph("unleash your powers.")
+		].join(" ")
+	},
+	{
+		name: "Move",
+		body: [
+			"Spend 1 burn to move to any place you choose within the scene, breaking",
+			"through or slipping past any barriers or restraints in your way.",
+			"Spend a second burn to move to any place you've previously been."
+		].join(" ")
+	},
+	{
+		name: "Boost",
+		body: [
+			"Spend 1 burn to supercharge a teammate's efforts with your powers,",
+			"giving them a +1 bonus to their roll as if you had spent Team from",
+			"the pool."
+		].join(" ")
+	},
+	{
+		name: "Overcharge",
+		body: [
+			"You channel the full capacity of your incredible powers to overcome",
+			"an obstacle, reshape your environment, or extend your senses.",
+			"Spend 2 burn to take a 10+ when you unleash your powers."
+		].join(" ")
+	},
+	{
+		name: "Elemental awareness",
+		body: [
+			"Spend 1 burn and mark a condition to open your mind up to the world",
+			"around you with your powers. You can ask any one question about the",
+			"world around you, and the GM will answer honestly."
+		].join(" ")
+	},
+	{
+		name: "Snatch",
+		body: [
+			"Spend 1 burn to use your powers to seize any one object up to the",
+			"size of a person from someone within view."
+		].join(" ")
 	}
 ]
 
