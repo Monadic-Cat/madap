@@ -14,6 +14,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+/** DOCUMENT ME */
 export type OrderedDict<k, v> = {
 	elements: Array<v>,
 	order: {
@@ -21,25 +22,31 @@ export type OrderedDict<k, v> = {
 	}
 }
 
+/** */
 export type LabelState = {
 	name: string,
 	value: number
 }
 
+/** */
 export type ConditionState = {
 	name: string,
 	marked: boolean
 }
 
+/** */
 export type PotentialState = {
 	total: number,
 	used: number,
 	groupSize: number
 }
 
+/** */
 export type LabelDict = OrderedDict<string, LabelState>
+/** */
 export type ConditionDict = OrderedDict<string, ConditionState>
 
+/** */
 export type CharacterState = {
 	+player: string,
 	+name: string,
@@ -79,6 +86,7 @@ function emptyCharacterState(): CharacterState {
 		harm: 0
 	}
 }
+
 export function mapArrayToOrderedDict<k, v>(arr: Array<k>, func: (k, number) => v): OrderedDict<k, v> {
 	let ordering: {
 		[k]: number
@@ -91,6 +99,7 @@ export function mapArrayToOrderedDict<k, v>(arr: Array<k>, func: (k, number) => 
 		order: ordering
 	}
 }
+/** */
 export function concatOrderedDicts<k, v>(a: OrderedDict<k, v>, b: OrderedDict<k, v>) {
 	let dict = {
 		elements: [ ...a.elements ],
@@ -113,21 +122,4 @@ export function defaultCharacterState(): CharacterState {
 		labels: mapArrayToOrderedDict(defaultLabels, x => ({ name: x, value: 0 })),
 		conditions: mapArrayToOrderedDict(defaultConditions, x => ({name: x, marked: false}))
 	};
-}
-
-export type AppState = {
-	+characters: Array<CharacterState>,
-	+selectedCharacter?: number
-}
-
-function emptyAppState(): AppState {
-	return {
-		characters: []
-	}
-}
-export function defaultAppState(): AppState {
-	return {
-		characters: [defaultCharacterState()],
-		selectedCharacter: 0
-	}
 }

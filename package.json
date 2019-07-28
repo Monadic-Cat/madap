@@ -1,6 +1,6 @@
 {
    "name": "madap",
-   "version": "0.1.2",
+   "version": "0.1.3",
    "description": "MAsks DAta Pod",
    "main": "lib/index.js",
    "repository": "https://github.com/Monadic-Cat/madap",
